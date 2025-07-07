@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - uv-build >=0.7.19,<0.8.0
     - pip
   run:
     - python >={{ python_min }}
