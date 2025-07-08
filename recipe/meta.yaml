@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "uv-secure" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/uv_secure-{{ version }}.tar.gz
-  sha256: 190f6c6bf680f5a411fcaabd5a528b2dbe94a3e4aadcf09c59f26ef81da1679d
+  sha256: 2d8ca43214983e5a0480577b256e25ff04af2ab0fafa47fe70b21f0bca6979fa
 
 build:
   noarch: python
