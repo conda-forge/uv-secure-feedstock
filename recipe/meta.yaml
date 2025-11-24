@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "uv-secure" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/uv_secure-{{ version }}.tar.gz
-  sha256: b66fe6adacbd6a359fd72550bf5438ee46c11c55aeb108ff1b482e705a57b3ff
+  sha256: c8b0f78f1c1d44df937f830ccc31864ae0a9ae0e56705480d6c52f681047b5f9
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
   run:
     - stamina >=25.1.0
     - python >={{ python_min }}
-    - anyio >=4.9.0
+    - anyio >=4.7.0
     - anysqlite >=0.0.5
     - asyncer >=0.0.8
     - hishel >=1.1.2
