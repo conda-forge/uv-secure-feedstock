@@ -28,7 +28,6 @@ requirements:
     - stamina >=25.1.0
     - python >={{ python_min }}
     - anyio >=4.7.0
-    - anysqlite >=0.0.5
     - httpx >=0.28.1
     - humanize >=4.11.0
     - inflect >=7.4.0
