@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "uv-secure" %}
-{% set version = "0.15.4" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/uv_secure-{{ version }}.tar.gz
-  sha256: 8d52b041a74f1116089842a257177111f27ad0ccb7c819c59c42af225a1a0e92
+  sha256: ddc039c8ef07b3c637d78d3e059d6a186f039935046612ff21b38ff4de20f016
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - uv-build >=0.7.2,<0.8.0
     - pip
   run:
+    - cvss >=3.6
     - orjson >=3.11.5
     - stamina >=25.1.0
     - python >={{ python_min }}
